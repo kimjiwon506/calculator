@@ -1,0 +1,44 @@
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  margin-bottom: 4px;
+}
+.btn {
+  width: 48px;
+  height: 48px;
+  background-color: #cccccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+
+  &:active {
+    background-color: burlywood;
+  }
+
+  &.btn-lg {
+    width: 100%;
+    max-width: 100px;
+  }
+  &.btn-ac {
+    width: 100%;
+    max-width: 204px;
+  }
+}
+.input {
+  max-width: 100px;
+  height: 48px;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  border: none;
+  background-color: #cccccc;
+  color: #ffffff;
+  padding: 10px;
+
+  &:disabled {
+    background-color: #cccccc;
+    border: 1px solid burlywood;
+  }
+}
